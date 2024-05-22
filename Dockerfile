@@ -4,7 +4,7 @@ FROM nginx:latest
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy TypeScript files to Nginx directory
-COPY ./ /usr/share/nginx/html
+COPY .. /usr/share/nginx/html
 
 # Expose ports
 EXPOSE 80
